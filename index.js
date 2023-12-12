@@ -24,31 +24,41 @@ function subtract(num1, num2) {
 }
 
 addButton.addEventListener('click',()=>{
-   outputList.append(add(parseFloat(var1.value),parseFloat(var2.value)));
+    let newItem = document.createElement("li");
+    newItem.innerText=(add(parseFloat(var1.value),parseFloat(var2.value)));
+   outputList.appendChild(newItem);
   outputList.append("\n");
+
    
 })
 
 multiplyButton.addEventListener('click',()=>{
-    outputList.append(multiply(parseFloat(var1.value),parseFloat(var2.value)));
-   outputList.append("\n");
+    let newItem = document.createElement("li");
+    newItem.innerText=(multiply(parseFloat(var1.value),parseFloat(var2.value)));
+   outputList.appendChild(newItem);
+  outputList.append("\n");
+
     
  })
 
  divideButton.addEventListener('click',()=>{
-    outputList.append(divide(parseFloat(var1.value),parseFloat(var2.value)));
-   outputList.append("\n");
+    let newItem = document.createElement("li");
+    newItem.innerText=(divide(parseFloat(var1.value),parseFloat(var2.value)));
+   outputList.appendChild(newItem);
+  outputList.append("\n");
+
     
  })
 
 subButton.addEventListener('click',()=>{
-    outputList.append(subtract(parseFloat(var1.value),parseFloat(var2.value)));
+     let newItem = document.createElement("li");
+     newItem.innerText=(subtract(parseFloat(var1.value),parseFloat(var2.value)));
+    outputList.appendChild(newItem);
    outputList.append("\n");
 
-   
-   
     
  })
+
 console.log(multiplyButton)
 
 
